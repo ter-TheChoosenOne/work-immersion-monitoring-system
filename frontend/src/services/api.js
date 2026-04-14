@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "http://localhost:3000/api/v1", // change if deployed
+  baseURL: "https://work-immersion-monitoring-system.onrender.com", // change if deployed
 });
 
 API.interceptors.request.use((config) => {
@@ -16,7 +16,7 @@ API.interceptors.request.use((config) => {
 
 // Admin API instance
 const AdminAPI = axios.create({
-  baseURL: "http://localhost:3000/api/v1",
+  baseURL: "https://work-immersion-monitoring-system.onrender.com",
 });
 
 AdminAPI.interceptors.request.use((config) => {
