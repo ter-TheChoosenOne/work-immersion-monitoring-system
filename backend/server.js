@@ -10,7 +10,8 @@ connectDB();
 
 app.use(cors({
    origin: [
-    'http://localhost:5173'
+    'http://localhost:5173',
+    'https://work-immersion-monitoring-system-9z.vercel.app'
    ],
    credentials: true
 
