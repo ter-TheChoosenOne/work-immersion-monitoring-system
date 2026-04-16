@@ -4,11 +4,11 @@
 Work Immersion System - Teacher and Student Portal
 
 ## Team Members
-- [Dexter Rilles] 
-- [Reiven Macaraig] 
-- [Hero Del Mundo] 
-- [Justin Jhade Permejo]
-- [Chamver Vitto]
+- [Reiven Macaraig] - [Project Leader]
+- [Dexter Rilles] - [Backend Developer]
+- [Hero Del Mundo] - [Frontend Developer]
+- [Justin Jhade Permejo] - [System Analyst]
+- [Chamver Vitto] - [Documentation]
 
 ## Live Links
 ### Frontend Web Application

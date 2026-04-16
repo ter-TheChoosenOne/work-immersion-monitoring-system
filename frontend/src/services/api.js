@@ -3,7 +3,7 @@ import axios from "axios";
 // Fallback in case env is missing
 const BASE_URL =
   import.meta.env.VITE_API_URL ||
-  "https://e-mmersion.onrender.com/api/v1";
+  "https://work-immersion-monitoring-system.onrender.com/api/v1";
 
 // Main API
 const API = axios.create({

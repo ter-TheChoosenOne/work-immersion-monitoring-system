@@ -39,8 +39,12 @@ app.get('/', (req, res) => {
 
 const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
-  console.log(`Auth: http://localhost:${PORT}${BASE_URI}/auth`);
-  console.log(`Admin: http://localhost:${PORT}${BASE_URI}/admin`);
-});
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`Server running on port ${PORT}`);
+    console.log(`Auth: http://localhost:${PORT}${BASE_URI}/auth`);
+    console.log(`Admin: http://localhost:${PORT}${BASE_URI}/admin`);
+  });
+}
+
+module.exports = app;

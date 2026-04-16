@@ -85,6 +85,9 @@ const register = async (req, res) => {
 
 // LOGIN
 const login = async (req, res) => {
+  console.log("=== LOGIN ATTEMPT ===");
+  console.log("Request body:", { email: req.body.email, studentId: req.body.studentId, teacherId: req.body.teacherId, hasPassword: !!req.body.password });
+
   const { email, studentId, teacherId, password } = req.body;
 
   try {
@@ -121,6 +124,7 @@ const login = async (req, res) => {
       return res.status(400).json({ error: "Wrong password" });
     }
 
+    console.log("Login SUCCESS for user:", user.fullName, "role:", user.role);
     res.json({
       message: "Login successful",
       token: generateToken(user),
@@ -132,6 +136,7 @@ const login = async (req, res) => {
     });
 
   } catch (error) {
+    console.error("Login ERROR:", error);
     res.status(500).json({ error: error.message });
   }
 };
